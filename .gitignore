@@ -7,5 +7,8 @@ crash.log
 # For built boxes
 *.box
 
-#VSCode
+# VSCode
 packer-alpine.code-workspace
+
+# TXT files
+*.txt
