@@ -12,3 +12,6 @@ packer-alpine.code-workspace
 
 # TXT files
 *.txt
+
+# build
+build
