@@ -1,0 +1,20 @@
+<network>
+  <name>minikube</name>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <bridge name='minikube' stp='on' delay='0'/>
+  <!-- echo 52:54$(hexdump -n4 -e '/1 ":%02x"' /dev/urandom) -->
+  <mac address='52:54:6d:68:fe:40'/>
+  <!-- TODO add ip address -->
+  <ip family='ipv4' address='' prefix='24'>
+    <dhcp>
+      <!-- echo 52:54:00$(hexdump -n3 -e '/1 ":%02x"' /dev/urandom) -->
+      <!-- TODO add ip address -->
+      <host mac='52:54:00:72:7a:89' ip=''/>
+    </dhcp>
+  </ip>
+</network>
+
